@@ -9,26 +9,29 @@ class HomePage extends StatelessWidget{
         title: const Text("HomePage"),
       ),
       body: ListView(
-        children: const [
+        children:  [
 
-          Padding(
+          const Padding(
             padding: EdgeInsets.all(20.0),
             child: Center(child: Text('LIST OF FOOD ITEMS')),
           ),
-          Card(
-            color: Colors.red,
-            child: ListTile(
-              leading: Icon(Icons.apple),
-              title: Text("Apple"),
+          GestureDetector(
+            onTap: (){},
+            child: const Card(
+              color: Colors.red,
+              child: ListTile(
+                leading: Icon(Icons.apple),
+                title: Text("Apple"),
+              ),
             ),
           ),
-          ListTile(
+          const ListTile(
             leading:Icon(Icons.star) ,
             title: Text("Banana"),
             subtitle: Text('I love Bananas'),
           ),
           
-          ListTile(
+          const ListTile(
             leading:Icon(Icons.star,color: Colors.blue,) ,
             title: Text("Coffe"),
           ),
