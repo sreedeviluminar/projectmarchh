@@ -11,15 +11,25 @@ class LoginPagedemo extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          const Padding(
+          Padding(
             padding: EdgeInsets.only(top: 30),
             child: Center(
-              child: Text(
-                "Flutter Login",
-                style: TextStyle(
-                    fontSize: 40,
-                    color: Colors.blue,
-                    fontWeight: FontWeight.bold),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 80,
+                    height: 60,
+                    child: Image.asset("assets/images/friendship.png"),
+                  ),
+                  const Text(
+                    "Flutter Login",
+                    style: TextStyle(
+                        fontSize: 40,
+                        color: Colors.blue,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ],
               ),
             ),
           ),
@@ -32,6 +42,7 @@ class LoginPagedemo extends StatelessWidget {
                   Icons.email,
                 ),
                 hintText: "Email",
+                labelText: "email",
               ),
             ),
           ),
@@ -39,19 +50,19 @@ class LoginPagedemo extends StatelessWidget {
               padding: EdgeInsets.only(left: 15, right: 15, top: 15),
               child: TextField(
                 obscureText: true,
-                obscuringCharacter: '*',
+                // obscuringCharacter: '*',
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
                   prefixIcon: Icon(
                     Icons.password,
                   ),
-                  hintText: "Password",
+                  //  hintText: "Password",
                   helperText: 'Password must have 6 characters',
                 ),
               )),
           Padding(
             padding: const EdgeInsets.only(top: 20),
-            child: SizedBox(
+            child: Container(
                 width: 200,
                 height: 50,
                 child: ElevatedButton(
@@ -60,7 +71,10 @@ class LoginPagedemo extends StatelessWidget {
                       "Login",
                       style: TextStyle(fontSize: 25),
                     ))),
-          )
+          ),
+          const SizedBox(height: 100),
+          TextButton(
+              onPressed: () {}, child: Text("Not a user? Register Here....."))
         ],
       ),
     );
