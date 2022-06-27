@@ -13,6 +13,7 @@ class ListWithBuilder extends StatelessWidget{
     'paint',
     'teddy'
   ];
+  List numbers = ["9876543210","0978653211","09876116758"];
   @override
   Widget build(BuildContext context) {
      return Scaffold(
@@ -24,6 +25,14 @@ class ListWithBuilder extends StatelessWidget{
            child: ListTile(
              leading: CircleAvatar(backgroundImage: AssetImage(images[index])),
              title: Text(names[index]),
+             subtitle:Text(numbers[index]) ,
+             trailing: Wrap(
+               spacing: 2.0,
+               children: const [
+                 Text("Menu"),
+                 Icon(Icons.phone),
+               ],
+             ),
            ),
          );
        },
