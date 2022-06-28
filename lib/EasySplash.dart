@@ -2,6 +2,7 @@ import 'package:easy_splash_screen/easy_splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:projectmarchh/GridDemo.dart';
 import 'package:projectmarchh/GridWithBuilder.dart';
+import 'package:projectmarchh/ListView2.dart';
 
 
 void main(){
@@ -30,7 +31,7 @@ class _SplashPageState extends State<SplashPage> {
       backgroundColor: Colors.grey.shade400,
       showLoader: true,
       loadingText: const Text("Loading..."),
-      navigator: GridBuilder(),
+      navigator: ListWithBuilder(),
       durationInSeconds: 2,
     );
   }

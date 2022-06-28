@@ -26,11 +26,11 @@ class ListWithBuilder extends StatelessWidget{
              leading: CircleAvatar(backgroundImage: AssetImage(images[index])),
              title: Text(names[index]),
              subtitle:Text(numbers[index]) ,
-             trailing: Wrap(
-               spacing: 2.0,
-               children: const [
-                 Text("Menu"),
-                 Icon(Icons.phone),
+             trailing: Column(
+               children: [
+                 Text("Thanal"),
+                 Text("Kakkanad"),
+                 Text("Kerala"),
                ],
              ),
            ),
