@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         child: ListView(
           children: <Widget>[
             Container(
-              padding: EdgeInsets.all(20),
+              padding: const EdgeInsets.all(20),
               child: TextFormField(
                 decoration: const InputDecoration(
                     labelText: 'Email', border: OutlineInputBorder()),
@@ -44,9 +44,9 @@ class MyApp extends StatelessWidget {
               ),
             ),
             Container(
-              padding: EdgeInsets.only(left: 50,right: 50),
+              padding: const EdgeInsets.only(left: 50,right: 50),
               child: ElevatedButton(
-                  child: Text('Submit'),
+                  child: const Text('Submit'),
                   onPressed: () {
                     final isValid = _form.currentState!.validate();
                     if (isValid) {
@@ -67,7 +67,7 @@ class MyApp extends StatelessWidget {
                 //     MaterialPageRoute(
                 //         builder: (context) => RegistrationPage()));
               },
-              child: Text("Not a user? Register Here"),
+              child: const Text("Not a user? Register Here"),
             ),
           ],
         ),
