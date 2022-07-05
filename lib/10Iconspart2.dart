@@ -124,7 +124,7 @@ class _MyHomePageState extends State<MyHomePage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: const [
                 FaIcon(
-                  FontAwesomeIcons.smile,
+                  FontAwesomeIcons.faceSmile,
                   color: Colors.green,
                   size: 35,
                 ),
@@ -132,7 +132,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   width: 15,
                 ),
                 FaIcon(
-                  FontAwesomeIcons.laugh,
+                  FontAwesomeIcons.faceAngry,
                   color: Colors.blue,
                   size: 35,
                 ),
